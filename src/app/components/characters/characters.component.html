@@ -1,0 +1,33 @@
+<div class="container">
+  <mat-form-field appearance="outline">
+    <mat-label> Buscar</mat-label>
+    <input
+      matInput
+      placeholder="search"
+      [(ngModel)]="params.name"
+      (input)="onSearch()"
+    />
+  </mat-form-field>
+  <div class="characters_card">
+    <mat-card
+      class="example-card"
+      *ngFor="
+        let item of dataAPi
+          | paginate
+            : { itemsPerPage: pageSize, currentPage: page, totalItems: count }
+      "
+      [routerLink]="['/characters', item.id]"
+    >
+      <img mat-card-image src="{{ item.image }}" />
+      <mat-card-content>
+        <mat-card-title>{{ item.name }}</mat-card-title>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <pagination-controls
+    previousLabel="Prev"
+    nextLabel="Next"
+    [responsive]="true"
+    (pageChange)="handlePageChange($event)"
+  ></pagination-controls>
+</div>

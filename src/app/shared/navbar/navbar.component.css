@@ -1,0 +1,34 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar > img {
+  width: 5%;
+}
+
+
+.toolbar_button{
+  display: flex;
+}
+
+.toolbar_button > button {
+  color: black;
+  font-family: "Open sans";
+  align-items: center;
+  height: 3rem;
+  font-size: 18px;
+  background-color: whitesmoke;
+  border: none;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-style: normal;
+}
+
+.toolbar_button > button:hover {
+  color: rgb(255, 152, 0);
+  transition-duration: 0.1s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: all;
+}

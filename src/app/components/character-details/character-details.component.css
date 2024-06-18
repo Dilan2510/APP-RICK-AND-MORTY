@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.example-card {
+  color: #fff;
+  margin: 1rem 0;
+  background-image: url("https://i.ibb.co/JjXXq9J/Rick.jpg");
+  box-shadow: 4px 4px 4px #aeaec0, -4px -4px 4px #fff;
+  font-family: "Open sans";
+  font-size: 20px;
+}
+
+.example-card:hover {
+  box-shadow: 4px 4px 4px #2626cc, -4px -4px 4px #fff;
+}
+
+.example-header-image {
+  background-size: cover;
+}
+
+.example-card > mat-card-content {
+  display: grid;
+  grid: 2rem / auto auto;
+  grid-gap: 1rem 5cqmax;
+}
+
+.example-card > img {
+  border-radius: 30%;
+  padding: 0 6rem;
+}
+
+mat-card-content > p > span {
+  font-size: 18px;
+}
+
+mat-card-content > p > span:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.card_location {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.card_location > span:hover {
+  color: blue;
+  cursor: pointer;
+}

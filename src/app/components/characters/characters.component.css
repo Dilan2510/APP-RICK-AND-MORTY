@@ -1,0 +1,43 @@
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.container > mat-form-field {
+  width: 50%;
+  padding: 2rem 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.characters_card {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.example-card {
+  background-image: url("https://i.ibb.co/JjXXq9J/Rick.jpg");
+  box-shadow: 4px 4px 4px #aeaec0, -4px -4px 4px #fff;
+  cursor: pointer;
+}
+
+.example-card > img {
+  border-radius: 50%;
+  padding: 0 1rem;
+}
+.example-card > mat-card-content {
+  background-color: aliceblue;
+  text-align: center;
+}
+
+.example-card:hover {
+  color: blue;
+}

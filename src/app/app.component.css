@@ -1,0 +1,13 @@
+.init{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.init > h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.init>img{
+    width: 60%;
+}

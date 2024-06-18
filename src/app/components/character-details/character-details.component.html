@@ -1,0 +1,19 @@
+<div class="container">
+  <mat-card class="example-card" *ngFor="let item of dataSource">
+    <mat-card-header>
+      <div mat-card-avatar  style="background-image: url({{item.image}})" class="example-header-image"></div>
+      <mat-card-title>{{ item.name }}</mat-card-title>
+      <mat-card-subtitle style="color: #fff;">{{ item.created }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{ item.image }}" alt="Photo of a Shiba Inu" />
+    <mat-card-content>
+      <p>Especie: <span>{{ item.species }}</span></p>
+      <p>Estado: <span>{{ item.status }}</span></p>
+      <p>Genero: <span>{{ item.gender }}</span></p>
+      <p>Origen: <span>{{ item.origin.name }}</span></p>
+    </mat-card-content>
+    <p class="card_location"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="location_on"></mat-icon>
+      Visto por ultima vez: <span>{{ item.location.name }}</span></p>
+    
+  </mat-card>
+</div>
